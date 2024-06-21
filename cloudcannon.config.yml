@@ -1,0 +1,35 @@
+paths:
+  uploads: static/uploads
+  static: static
+  collections: content
+  data: data
+  layouts: layouts
+  includes: layouts
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  gallery:
+    path: content/gallery
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  gallery_b:
+    path: content/gallery_b
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+collections_config_override: false
+base_url: /pixv1
+data_config: {}
+timezone: EDT/UTC

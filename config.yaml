@@ -1,0 +1,55 @@
+baseURL: http://localhost/
+# Disable taxonomy pages (disables categories and tags folders)
+disableKinds:
+- taxonomy
+- taxonomyTerm
+# for xml output
+languageCode: "en"
+# for website
+defaultContentLanguage: "en"
+languages:
+  en:
+    weight: 1
+title: gvh.famTrkr
+# alternate copyright company text
+copyright: fastrkr_developments
+# controls number of pages displayed on list pages
+paginate: 5
+# controls the summary length on list pages
+summaryLength: 7
+
+params:
+  cloudFrontURL: https://pix.movetrkr.com/pixv1   # Update to your custom CloudFront URL
+
+
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+ 
+# paths:
+#   uploads: assets/uploads
+#   dam_uploads: raw
+
+
+# menu links via config file
+menu:
+  main:
+  - name: Gallery
+    url: /gallery/
+    weight: 1
+  - name: Gallery X
+    url: /gallery_x/
+    weight: 1
+  - name: Github
+    url: http://www.github.com/
+    weight: 90
+    params:
+      blank: true
+  - name: Google
+    url: http://www.google.com/
+    weight: 100
+    params:
+      blank: true
+

@@ -1,0 +1,7 @@
+{{ range .Site.Pages }}
+    {{ if eq .Type "image" }}
+        <a href="{{ .Permalink }}">
+            <img src="https://dcerp287xg87e.cloudfront.net/acct-03/user-101/inline/{{ .Params.filename }}-02-{{ .Params.hash }}.jpeg" alt="{{ .Title }}">
+        </a>
+    {{ end }}
+{{ end }}

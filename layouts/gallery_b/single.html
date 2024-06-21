@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{ partial "title" . }}
+        <div class="py-3">{{ .Content | markdownify }}</div>
+      </div>
+    </div>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      {{ range .Params.images }}
+      <div class="col-6 col-md-4 col-xl-3 pb-3 px-2">
+        {{ $segments := split . "/" }}
+        {{ $filename := index $segments (sub (len $segments) 1) }}
+        {{ $title := index (split $filename "-") 0 }}
+        <img src="{{ $.Site.Params.cloudFrontURL }}{{ . }}" width="600" alt="Gallery Image" class="img-fluid">
+        <div class="image-title">{{ $title }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+

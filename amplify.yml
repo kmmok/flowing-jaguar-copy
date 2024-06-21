@@ -1,0 +1,19 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - apt-get update && apt-get install -y curl wget
+            - wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.deb
+            - dpkg -i hugo_0.91.2_Linux-64bit.deb
+        build:
+          commands:
+            - hugo --minify
+      artifacts:
+        baseDirectory: public
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/* # if you have node dependencies
