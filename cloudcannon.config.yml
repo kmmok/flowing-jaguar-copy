@@ -29,7 +29,13 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  gallery_c:
+    path: content/gallery_c
+    output: true
+
+_inputs:
+  image_url:
+    type: image
 collections_config_override: false
-base_url: /pixv1
 data_config: {}
 timezone: EDT/UTC
