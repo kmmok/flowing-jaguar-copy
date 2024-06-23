@@ -22,8 +22,8 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  gallery_b:
-    path: content/gallery_b
+  gallery_x:
+    path: content/gallery_x
     output: true
     icon: notes
     disable_add: false
