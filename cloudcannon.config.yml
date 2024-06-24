@@ -32,10 +32,22 @@ collections_config:
   gallery_c:
     path: content/gallery_c
     output: true
-
+    description: ''
+    icon: notes
+    _editables:
+    _enabled_editors:
+      - visual
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+collections_config_override: false
 _inputs:
   image_url:
     type: image
-collections_config_override: false
+    cascade: true
 data_config: {}
 timezone: EDT/UTC
