@@ -31,4 +31,7 @@ images:
   - image_url: >-
       https://res.cloudinary.com/vermilion-mandrill/image/upload/v1721105225/sample/orpzctq84apaw4jxveqf.gif
     alt_text:
+  - image_url: >-
+      https://res.cloudinary.com/vermilion-mandrill/image/upload/v1674509936/cld-sample-5.jpg
+    alt_text:
 ---
